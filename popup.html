@@ -11,7 +11,6 @@
 <body>
 
     <style>
-        
         .modal-body {
             max-width: 600px;
             margin: auto;
@@ -24,7 +23,8 @@
             border-radius: 10px;
         }
 
-        #btn {
+        #btn,
+        #color {
             padding: 7px 20px;
             text-transform: uppercase;
             color: white;
@@ -38,14 +38,14 @@
         .coupon {
             display: none;
         }
-
     </style>
 
     <div class="modal-body">
 
         <div class="offer">
-            <h2>We have a new offer today! Check out it!</h2>
-            <button id="btn">See offer</button>
+            <h2>We have a new offer today! Check out!<h2>
+                    <button id="btn">See offer</button>
+                    <button id="color">Change color</button>
         </div>
 
         <div class="coupon">
@@ -55,7 +55,33 @@
     </div>
 
     <script>
+        const colorBtn = document.getElementById("color");
+        const modal = document.querySelector(".modal-body");
+        const btn = document.getElementById("btn");
+        const coupon = document.querySelector(".coupon");
+        const offer = document.querySelector(".offer");
 
+
+        colorBtn.addEventListener("click", function () {
+            modal.style.backgroundColor = "red";
+            coupon.style.display = "block";
+            offer.style.display = "none";
+        });
+
+        //event
+        btn.addEventListener("click", function () {
+            // console.log("New offer is here");
+            // btn.innerText = "hello offer";
+            // btn.style.backgroundColor = "red";
+            coupon.style.display = "block";
+            offer.style.display = "none";
+        });
+
+
+        // modal.addEventListener("click", function () {
+        //     console.log("we are on the modal body");
+        //     console.log(modal);
+        // });
     </script>
 
     <script>
