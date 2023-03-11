@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM & Function</title>
+</head>
+
+<style>
+    .main{
+        background-color: aqua;
+        border: 1px solid black;
+        padding: 40px;
+    }
+</style>
+
+<body>
+
+    <div id="about">
+        <h1>We are learning javascript DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ipsa mollitia exercitationem illo tenetur commodi ex vel ducimus dolorem eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, voluptatem.
+        </p>
+        <a href="#" id="btn">Learn more</a>
+    </div>
+    <!-- <div></div>
+    <div></div>
+    <div></div> -->
+
+    <script>
+      let header = document.getElementById("about")
+
+      const button = document.getElementById("btn")
+
+      let allDiv = document.getElementsByTagName
+      ("div")
+
+    //   header.style.backgroundColor = "red";
+      header.style.color = "white";
+      header.classList.add("main");
+
+        // query selector
+        const headeng = document.querySelector("#about")
+
+        
+
+    </script>
+
+</body>
+
+</html>
