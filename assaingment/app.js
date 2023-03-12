@@ -32,7 +32,6 @@ function printLoop(initialvalue, finalValue) {
 };
 
 printLoop(10, 15);
-printLoop(10, 20);
 
 
 // 05. Create a function which return whether the year is leap year or not
@@ -47,12 +46,24 @@ function isLeapyear(year) {
     }
 };
 
-isLeapyear(1941);
+isLeapyear(1944);
 
 
 // 06. Create a function which return whether the temperature is hot or cold (30 <=  is hot, 25 >= is cold , anyother value is normal)
 
+function hotOrCold (temp){
+    if(temp >= 30){
+        console.log(temp, "is hot");
+    }
+    else if(temp <= 25){
+        console.log(temp, "is cold");
+    }
+    else{
+        console.log(temp, "normal");
+    }
+};
 
+hotOrCold(27);
 
 
 // 07. Create a function which returns whether the number is odd or even
@@ -66,4 +77,4 @@ function oddOrEven(num) {
     }
 };
 
-oddOrEven(23);
+oddOrEven(24);
