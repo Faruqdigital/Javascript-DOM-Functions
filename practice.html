@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .header {
+        border: 1px solid black;
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+    }
+</style>
+
+<body>
+
+    <h2 style="text-align: center;">Dom Practice</h2>
+
+    <div class="header" style="text-align: center;">
+
+        <button id="btn-1" class="btn-one" style="cursor: pointer;">Color Red</button>
+
+        <button id="btn-2" class="btn-two" style="cursor: pointer;">Color Blue</button>
+
+    </div>
+
+    <script>
+        // console.log("test");
+
+        const colorBtn = document.getElementById("btn-1");
+        // console.log("colorBtn");
+        const bttnn = document.getElementById("btn-2");
+
+        const colarButton = document.querySelector(".header");
+
+        colorBtn.addEventListener("click", function () {
+            colarButton.style.backgroundColor = "red";
+        });
+
+        bttnn.addEventListener("click", function () {
+            colarButton.style.backgroundColor = "blue";
+
+        });
+
+    </script>
+</body>
+
+</html>
